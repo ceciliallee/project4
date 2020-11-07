@@ -7,26 +7,48 @@ body {
   color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+nav {
+  animation: smooth 30s infinite;
+  display: flex;
+  position: fixed;
+  top: -6.25rem;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1001;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 3px 3px -1px rgba(0,0,0,0.2);
+}
+
+nav img {
+  width: 35px;
+  margin-left: 10px;
+}
 
 @keyframes smooth {
     0% {
-      background: #ff4757;
+      background: #526991;
     }
   
     25% {
-      background: #1e90ff;
+      background: #88bdbc;
     }
   
     50% {
-      background: #6a89cc;
+      background: #5265b1;
     }
   
     75% {
-      background: #00b894;
+      background: #8d63b4;
     }
   
     100% {
-      background: #ff4757;
+      background: #526991;
     }
   }
 
@@ -44,15 +66,34 @@ body {
     filter: blur(0px);
   }
 
-
   .container {
     animation: fadeIn 2s;
-    margin-top: 30px;
+    margin-top: 100px;
     display: flex;
     width: 100%;
     justify-content: center;
     margin-bottom: 20px;
   }
+
+  .timeline {
+    margin: auto;
+    width: 80%;
+    scroll-snap-type: y mandatory;
+  overflow: scroll;
+  height: 100vh;
+  position: relative;
+  }
+
+  .event {
+    scroll-snap-align: start;
+    text-align: center;
+  }
+
+  .intro, .event {
+    height: 100vh;
+  }
+
+
 
   /* Source Card */
   .source {
@@ -114,6 +155,7 @@ body {
     height: 40px;
     width: 150px;
     border: 2px solid #f76c6c;
+    border-radius: 2px;
     margin: 20px 20px 20px 20px;
     color: #f76c6c;
     text-transform: uppercase;
@@ -170,7 +212,7 @@ body {
   /* Footer */
 
   .footer {
-    background-color:#f76c6c;
+    animation: smooth 40s infinite;
     color: white;
     padding: 20px;
     text-align: center;
@@ -183,4 +225,3 @@ body {
     color: white;
   }
 
-  

@@ -1,9 +1,10 @@
 body {
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
-    background-color: #FFF5F5;
+    background-color: #a8d0e6;
     filter: blur(4px);
   transition: filter 1s ease-out;
+  color: white;
 }
 
 
@@ -52,3 +53,134 @@ body {
     justify-content: center;
     margin-bottom: 20px;
   }
+
+  /* Source Card */
+  .source {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #card {
+    display: none;
+    width: 30rem;
+    height: 15rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+  }
+
+  #card:active {
+    display: block;
+    width: 30rem;
+    height: 15rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    background: inherit;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+  }
+
+  .source-card a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .source-card:before {
+    content: "";
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
+    filter: blur(20px);
+    margin: -20px;
+  }
+
+  /* Button stuff, from codepen by Alex Loomer */
+   .button { /* this section creates the simple layout of the button */
+    display: inline-flex;
+    height: 40px;
+    width: 150px;
+    border: 2px solid #f76c6c;
+    margin: 20px 20px 20px 20px;
+    color: #f76c6c;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  .button a {
+    text-decoration: none;
+    color: #f76c6c;
+  }
+
+  #button-3 { /* initially hides the effect */
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  #button-3 a { /* implements the soothing ease effect */
+    position: relative;
+    transition: all .45s ease-Out;
+  }
+  
+  #circle { /* this is what expands in the buttom for the effect */
+    width: 0%; /* initially "hidden", or at width and height of 0 */
+    height: 0%;
+    opacity: 0;
+    line-height: 40px;
+    border-radius: 50%;
+    background: #f76c6c;
+    position: absolute;
+    transition: all .5s ease-Out;
+    top: 20px;
+    left: 70px;
+  }
+  
+  #button-3:hover #circle { /* the circle expands on hover */
+    width: 200%;
+    height: 500%;
+    opacity: 1;
+    top: -70px;
+    left: -70px;
+  }
+  
+  #button-3:hover a {
+    color: white;
+  }
+
+  /* Footer */
+
+  .footer {
+    background-color:#f76c6c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    margin-top: 20px;
+    /* position: absolute; */
+  }
+
+  .footer a {
+    color: white;
+  }
+
+  

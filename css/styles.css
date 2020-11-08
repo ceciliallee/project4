@@ -3,7 +3,7 @@ body {
     margin: 0;
     background-color: #a8d0e6;
     filter: blur(4px);
-    transition: filter 1s ease-out;
+    transition: filter 0.7s ease-out;
     color: white;
     /* background-image: url(/img/image2.png);
     background-repeat: no-repeat;

@@ -41,5 +41,5 @@ function slideShow(interval) {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-  slideShow(7500); // this insures the speed of the slideshow
+  slideShow(7000); // this insures the speed of the slideshow
 });

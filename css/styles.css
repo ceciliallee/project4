@@ -3,8 +3,37 @@ body {
     margin: 0;
     background-color: #a8d0e6;
     filter: blur(4px);
-  transition: filter 1s ease-out;
-  color: white;
+    transition: filter 1s ease-out;
+    color: white;
+    /* background-image: url(/img/image2.png);
+    background-repeat: no-repeat;
+    background-size: contain; */
+}
+
+.container1 .slide {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 170vh;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  z-index: -2;
+  top: -75vh;
+  transition: opacity 2.5s ease-in-out;
+  width: 100%;
+  z-index: 1;
+}
+
+.container1 .slide.show {
+  opacity: 1;
+}
+
+.content {
+  z-index: 2;
+  text-align: center;
+  width: 70%;
+  margin-top: 25vh;
 }
 
 html {
@@ -40,7 +69,7 @@ nav img {
     }
   
     50% {
-      background: #5265b1;
+      background: #6577bd;
     }
   
     75% {
@@ -75,13 +104,18 @@ nav img {
     margin-bottom: 20px;
   }
 
+  .header {
+    text-align: center;
+  }
+
   .timeline {
     margin: auto;
-    width: 80%;
+    width: 75%;
     scroll-snap-type: y mandatory;
-  overflow: scroll;
-  height: 100vh;
-  position: relative;
+    overflow: scroll;
+    height: 80vh;
+    position: relative;
+    margin-top: 20vh;
   }
 
   .event {
@@ -93,7 +127,14 @@ nav img {
     height: 100vh;
   }
 
+  .event h1 {
+    color: #526991;
+    font-size: 28px;
+  }
 
+  .event p {
+    font-size: 19px;
+  }
 
   /* Source Card */
   .source {
@@ -134,6 +175,11 @@ nav img {
   .source-card a {
     text-decoration: none;
     color: inherit;
+  }
+
+  .source-card a:hover {
+    color: #526991;
+    transition: color 1s;
   }
 
   .source-card:before {

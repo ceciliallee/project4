@@ -1,11 +1,11 @@
 body {
-    font-family: 'Source Sans Pro', sans-serif;
-    margin: 0;
-    background-color: #a8d0e6;
-    filter: blur(4px);
-    transition: filter 0.7s ease-out;
-    color: white;
-    /* background-image: url(/img/image2.png);
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  background-color: #a8d0e6;
+  filter: blur(4px);
+  transition: filter 0.7s ease-out;
+  color: white;
+  /* background-image: url(/img/image2.png);
     background-repeat: no-repeat;
     background-size: contain; */
 }
@@ -31,7 +31,7 @@ body {
 
 .content {
   z-index: 2;
-  text-align: center;
+  /* text-align: center; */
   width: 70%;
   margin-top: 25vh;
 }
@@ -51,7 +51,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 2px 3px 3px -1px rgba(0,0,0,0.2);
+  box-shadow: 2px 3px 3px -1px rgba(0, 0, 0, 0.2);
 }
 
 nav img {
@@ -60,109 +60,114 @@ nav img {
 }
 
 @keyframes smooth {
-    0% {
-      background: #526991;
-    }
-  
-    25% {
-      background: #88bdbc;
-    }
-  
-    50% {
-      background: #6577bd;
-    }
-  
-    75% {
-      background: #8d63b4;
-    }
-  
-    100% {
-      background: #526991;
-    }
+  0% {
+    background: #526991;
   }
 
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-    }
-  
-    100% {
-      opacity: 1;
-    }
+  25% {
+    background: #88bdbc;
   }
 
-  .loaded {
-    filter: blur(0px);
+  50% {
+    background: #6577bd;
   }
 
-  .container {
-    animation: fadeIn 2s;
-    margin-top: 100px;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 20px;
+  75% {
+    background: #8d63b4;
   }
 
-  .header {
-    text-align: center;
+  100% {
+    background: #526991;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
   }
 
-  .timeline {
-    margin: auto;
-    width: 70%;
-    scroll-snap-type: y mandatory;
-    overflow: scroll;
-    height: 75vh;
-    position: relative;
-    margin-top: 23vh;
+  100% {
+    opacity: 1;
   }
+}
 
-  .event {
-    scroll-snap-align: start;
-    text-align: center;
-  }
+.loaded {
+  filter: blur(0px);
+}
 
-  .intro, .event {
-    height: 100vh;
-  }
+.container {
+  animation: fadeIn 2s;
+  margin-top: 100px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 20px;
+}
 
-  .event h1 {
-    color: #526991;
-    font-size: 28px;
-  }
+.header {
+  text-align: center;
+}
 
-  .event p {
-    font-size: 19px;
-  }
+.timeline {
+  margin: auto;
+  width: 70%;
+  scroll-snap-type: y mandatory;
+  overflow: scroll;
+  height: 75vh;
+  position: relative;
+  margin-top: 23vh;
+}
 
-  /* Source Card */
-  .source {
-    display: flex;
-    flex-direction: column;
-  }
+.event {
+  scroll-snap-align: start;
+  text-align: center;
+}
 
-  #card {
-    display: none;
-    width: 35%;
-    height: 20%;
-    padding: 2rem;
-    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
-    border-radius: 5px;
-    position: relative;
-    z-index: 1;
-    background: inherit;
-    overflow: hidden;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 30px;
-  }
+.event img {
+  width: 30%;
+}
 
-  #card p {
-    text-align: center;
-  }
+.intro,
+.event {
+  height: 100vh;
+}
 
-  /* #card:active {
+.event h1 {
+  color: #526991;
+  font-size: 28px;
+}
+
+.event p {
+  font-size: 19px;
+}
+
+/* Source Card */
+.source {
+  display: flex;
+  flex-direction: column;
+}
+
+#card {
+  display: none;
+  width: 35%;
+  height: 20%;
+  padding: 2rem;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  background: inherit;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+#card p {
+  text-align: center;
+}
+
+/* #card:active {
     display: block;
     width: 40%;
     display: flex;
@@ -179,139 +184,144 @@ nav img {
     margin: auto;
   } */
 
-  .source-card a {
-    text-decoration: none;
-    color: inherit;
-  }
+.source-card a {
+  text-decoration: none;
+  color: inherit;
+}
 
-  .source-card a:hover {
-    color: #526991;
-    transition: color 1s;
-  }
+.source-card a:hover {
+  color: #526991;
+  transition: color 1s;
+}
 
-  .source-card:before {
-    content: "";
-    background: inherit;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    box-shadow: inset 0 0 2000px rgba(255, 255, 255, .5);
-    filter: blur(20px);
-    /* margin: -20px; */
-  }
+.source-card:before {
+  content: "";
+  background: inherit;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5);
+  filter: blur(20px);
+  /* margin: -20px; */
+}
 
-  /* Button stuff, from codepen by Alex Loomer */
-   .button { /* this section creates the simple layout of the button */
-    display: inline-flex;
-    height: 40px;
-    width: 150px;
-    border: 2px solid #f76c6c;
-    border-radius: 2px;
-    margin: 20px 20px 20px 20px;
-    color: #f76c6c;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: .8em;
-    letter-spacing: 1.5px;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    margin: auto;
-  }
+/* Button stuff, from codepen by Alex Loomer */
+.button {
+  /* this section creates the simple layout of the button */
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+  border: 2px solid #f76c6c;
+  border-radius: 2px;
+  margin: 20px 20px 20px 20px;
+  color: #f76c6c;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin: auto;
+}
 
-  .button a {
-    text-decoration: none;
-    color: #f76c6c;
-  }
+.button a {
+  text-decoration: none;
+  color: #f76c6c;
+}
 
-  #button-3 { /* initially hides the effect */
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-  }
-  
-  #button-3 a { /* implements the soothing ease effect */
-    position: relative;
-    transition: all .45s ease-Out;
-  }
-  
-  #circle { /* this is what expands in the buttom for the effect */
-    width: 0%; /* initially "hidden", or at width and height of 0 */
-    height: 0%;
-    opacity: 0;
-    line-height: 40px;
-    border-radius: 50%;
-    background: #f76c6c;
-    position: absolute;
-    transition: all .5s ease-Out;
-    top: 20px;
-    left: 70px;
-  }
-  
-  #button-3:hover #circle { /* the circle expands on hover */
-    width: 200%;
-    height: 500%;
-    opacity: 1;
-    top: -70px;
-    left: -70px;
-  }
-  
-  #button-3:hover a {
-    color: white;
-  }
+#button-3 {
+  /* initially hides the effect */
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
 
-  /* Footer */
+#button-3 a {
+  /* implements the soothing ease effect */
+  position: relative;
+  transition: all 0.45s ease-Out;
+}
 
-  .footer {
-    animation: smooth 40s infinite;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    bottom: 0;
-    margin-top: 20px;
-  }
+#circle {
+  /* this is what expands in the buttom for the effect */
+  width: 0%; /* initially "hidden", or at width and height of 0 */
+  height: 0%;
+  opacity: 0;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #f76c6c;
+  position: absolute;
+  transition: all 0.5s ease-Out;
+  top: 20px;
+  left: 70px;
+}
 
-  .footer a {
-    color: white;
-  }
+#button-3:hover #circle {
+  /* the circle expands on hover */
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  top: -70px;
+  left: -70px;
+}
 
-  /* Media Queries */
+#button-3:hover a {
+  color: white;
+}
 
-  @media (max-width: 767px) {
-    .timeline {
-      width: 80%;
-      height: 50vh;
-      margin-top: 10vh;
-    }
-    #card {
-      width: 70%;
-      height: 40%;
-    }
+/* Footer */
 
-    .container {
-      margin-bottom: -60px;
-    }
+.footer {
+  animation: smooth 40s infinite;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  bottom: 0;
+  margin-top: 20px;
+}
 
-    .container1 .slide {
-      height: 135vh;
-      top: -50vh;
-    }
+.footer a {
+  color: white;
+}
 
-    .content {
-      margin-top: 15vh;
-      width: 82%;
-    }
-  }
+/* Media Queries */
 
-  @media (max-width: 550px) {
-    .timeline {
-      height: 50vh;
+@media (max-width: 767px) {
+  .timeline {
+    width: 80%;
+    height: 50vh;
     margin-top: 10vh;
-    }
-    #card {
-      width: 70%;
-      height: 40%;
-    }
   }
+  #card {
+    width: 70%;
+    height: 40%;
+  }
+
+  .container {
+    margin-bottom: -60px;
+  }
+
+  .container1 .slide {
+    height: 135vh;
+    top: -50vh;
+  }
+
+  .content {
+    margin-top: 15vh;
+    width: 82%;
+  }
+}
+
+@media (max-width: 550px) {
+  .timeline {
+    height: 50vh;
+    margin-top: 10vh;
+  }
+  #card {
+    width: 70%;
+    height: 40%;
+  }
+}

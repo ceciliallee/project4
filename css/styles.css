@@ -108,6 +108,15 @@ nav img {
   text-align: center;
 }
 
+.chart {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 15vh;
+}
+
 .timeline {
   margin: auto;
   width: 70%;

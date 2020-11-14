@@ -10,6 +10,54 @@ body {
     background-size: contain; */
 }
 
+.img1 {
+  background-image: url(img/image1.png);
+}
+
+.img2 {
+  background-image: url(img/image2.png);
+}
+
+.img3 {
+  background-image: url(img/image3.png);
+}
+
+.img4 {
+  background-image: url(img/image4.png);
+}
+
+.link,
+.title,
+.introtitle,
+.next {
+  text-decoration: none;
+}
+
+.introtitle {
+  text-align: center;
+  color: rgb(255, 221, 227);
+}
+
+.link {
+  color: #f76c6c;
+}
+
+.next {
+  color: #526991;
+  margin-top: 15vh;
+}
+
+.next:hover {
+  color: #f76c6c;
+  cursor: pointer;
+  transition: color 1s;
+}
+
+
+.title {
+  color: pink;
+}
+
 .container1 .slide {
   background-position: center center;
   background-repeat: no-repeat;
@@ -31,7 +79,7 @@ body {
 
 .content {
   z-index: 2;
-  /* text-align: center; */
+  text-align: center;
   width: 70%;
   margin-top: 25vh;
 }
@@ -120,16 +168,21 @@ nav img {
 .timeline {
   margin: auto;
   width: 70%;
-  scroll-snap-type: y mandatory;
-  overflow: scroll;
-  height: 75vh;
+  height: 80vh;
   position: relative;
-  margin-top: 23vh;
+  margin-top: 10vh;
+  overflow: scroll;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 .event {
   scroll-snap-align: start;
   text-align: center;
+}
+
+.event h1 {
+  padding-top: 11vh;
 }
 
 .event img {
@@ -147,7 +200,7 @@ nav img {
 }
 
 .event p {
-  font-size: 19px;
+  font-size: 18px;
 }
 
 /* Source Card */
@@ -301,7 +354,8 @@ nav img {
 @media (max-width: 767px) {
   .timeline {
     width: 80%;
-    height: 50vh;
+    height: auto;
+    overflow: unset;
     margin-top: 10vh;
   }
   #card {
@@ -326,8 +380,8 @@ nav img {
 
 @media (max-width: 550px) {
   .timeline {
-    height: 50vh;
     margin-top: 10vh;
+    overflow: unset;
   }
   #card {
     width: 70%;
